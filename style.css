@@ -1,63 +1,60 @@
 body {
+    height: 100svh;
     background-color: #11222c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.wrapper {
-    display: flex;
-    flex-flow: row wrap;
+li {
+    list-style: none;
 }
 
-.wrapper > * {
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-}
-
-.header {
-    background-color: #53b1b1;
-    height: 120px;
-    border-radius: 5px;
-}
-
-.footer {
-    background-color: #53b1b1;
-    height: 80px;
-    border-radius: 5px;
-}
-
-.main {
-    background-color: #1c5858;
-    height: 75vh;
-    border-radius: 5px;
-}
-
-.side {
-    background-color: #53b1b1;
-    border-radius: 5px;
-}
-.header h1 {
+a {
+    text-decoration: none;
     color: #f69000;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 30px;
+    font-size: 1rem;
 }
 
-@media all and (min-width: 800px) {
+a:hover {
+    color: #f6c624;
+}
 
-    .main {
-        flex: 3;
-    }
+header {
+    position: relative;
+    padding: 0 2rem;
+}
 
-    .side {
-        order:1;
-    }
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    .main {
-        order: 2
-    }
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-    .footer {
-        order: 4;
-    }
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #53b1b1;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/*
+https://www.youtube.com/watch?v=GdrbE-s5DgQ&list=PL8B9COSat0LTg8Nekmv3K-TqJW8BsO0R9
+at time code 5:41
+*/
+
+.logo img{
+    max-height: 60px;
 }
