@@ -1,0 +1,20 @@
+body {
+    background-color: #11222c;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    background-color: #53b1b1;
+    height: 120px;
+}
+
+
+/*
+.header h1 {
+    color: #f69000;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+*/
