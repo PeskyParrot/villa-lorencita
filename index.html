@@ -21,11 +21,30 @@
                 <li><a href="services">Services</a></li>
                 <li><a href="gallery">Gallery</a></li>
             </ul>
-            <a href="contact" class="contact_btn">Contact</a>
+            <a href="#" class="contact_btn">Contact</a>
+            
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
+
+            <div class="dropdown_menu">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="gallery">Gallery</a></li>
+                <li><a href="#" class="contact_btn">Contact</a></li>
+            </div>
         </div>
     </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+        }
+    </script>
 </body>
 </html>

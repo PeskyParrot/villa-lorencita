@@ -50,6 +50,77 @@ header {
     display: none;
 }
 
+.contact_btn {
+    background-color: #f69000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.contact_btn:hover {
+    scale: 1.05;
+    color: #fff;
+}
+
+.contact_btn:active {
+    scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown_menu.open {
+    height: 240px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .contact_btn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 992px) {
+    .navbar .links,
+    .navbar .contact_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
 /*
 https://www.youtube.com/watch?v=GdrbE-s5DgQ&list=PL8B9COSat0LTg8Nekmv3K-TqJW8BsO0R9
 at time code 5:41
