@@ -1,7 +1,7 @@
 body {
     height: 100svh;
-    background-color: #11222c;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1c5858;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 li {
@@ -19,8 +19,12 @@ a:hover {
 }
 
 header {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     padding: 0 2rem;
+    background-color: #11222c;
+    border-radius: 10px;
 }
 
 .navbar {
@@ -41,6 +45,7 @@ header {
 .navbar .links {
     display: flex;
     gap: 2rem;
+    font-weight: bold;
 }
 
 .navbar .toggle_btn {
@@ -57,7 +62,7 @@ header {
     border: none;
     outline: none;
     border-radius: 20px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
@@ -86,10 +91,11 @@ header {
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-weight: 600;
 }
 
 .dropdown_menu.open {
-    height: 240px;
+    height: 255px;
 }
 
 .dropdown_menu li {
@@ -103,11 +109,23 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
+    font-weight: 600;
+}
+
+/* CONTENT */
+main h1 {
+    font-size: 3rem;
+    color:#f69000;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: 1.2rem;
 }
 
 /* HOME */
 section#home {
-    height: calc(100svh - 60px);
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,10 +134,59 @@ section#home {
     color: #f6c624;
 }
 
-#home h1 {
-    font-size: 3rem;
-    color:#f69000;
-    margin-bottom: 1rem;
+/* ABOUT */
+section#about {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6c624;
+}
+
+/* SERVICES */
+section#services {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6c624;
+}
+
+/* GALLERY */
+section#gallery {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6c624;
+}
+
+/* FIND US */
+section#location {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6c624;
+}
+
+/* CONTACT */
+section#contact {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6c624;
 }
 
 /* RESPONSIVE DESIGN */
